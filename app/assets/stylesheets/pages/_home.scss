@@ -1,1 +1,36 @@
 // Specific CSS for your home-page
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Lora:ital@1&family=Montserrat:wght@700&family=Roboto:wght@100;700&display=swap');
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  height:100vh;
+}
+
+.container-1 {
+  margin-left: 550px;
+  margin-right: 550px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  background-color: #0f3d5e;
+  border: 2px solid white;
+  color: white;
+  border-radius: 40px;
+  transition-duration: 0.4s;
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  width: 200px;
+  text-align: center;
+}
+
+a:hover {
+    background-color:white;
+    color: #0f3d5e;
+  }

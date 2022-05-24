@@ -4,16 +4,27 @@
 .banner {
   background-size: cover;
   background-position: center;
-  position:relative;
+  padding: 150px 0;
   height:100vh;
 }
 
-.container-1 {
-  margin-left: 550px;
-  margin-right: 550px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: space-between;
+.banner h1 {
+  margin-top: 120px;
+  margin-bottom: -10px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+}
+
+.banner p {
+  font-size: 40px;
+  color: white;
+  opacity: .7;
+  text-shadow: 2px 2px black;
+  margin-bottom: 130px;
+  margin-left: 190px;
 }
 
 a {
@@ -35,37 +46,45 @@ a:hover {
     color: #0f3d5e;
   }
 
+.cards {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+    justify-content: space-around;
+  }
+
+
   // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .banner {
+  .cards {
     grid-template-columns: 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .banner {
+  .cards {
     grid-template-columns: 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .banner {
+  .cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .banner {
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .banner {
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
